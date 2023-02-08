@@ -1,0 +1,297 @@
+<html>
+<title> Portofolio Saya </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<body>
+<style>
+	*{
+		box-sizing:border-box;
+	}
+html, body{
+	
+	background-color: lightblue;
+}
+
+.judul{
+	background-color: lightseagreen;
+	height:50%;
+	width: 100%;
+}
+.bunder{
+	border-radius:50%;
+	height:100%;
+	margin-left:4px;
+	margin-top:0;
+	border: 1px solid darkslategray;
+
+}
+.isi{
+	background-color: whitesmoke;
+	display:none;
+	width: 80%;
+	height: 100%;
+	float:left;
+	right:0;
+	margin-top: 0;
+}
+.konten{
+	background-color: whitesmoke;
+	width: 80%;
+	height: 50%;
+	float:left;
+	right:0;
+	margin-top: 0;
+}
+ p{
+ 	font-size: 50px;
+ 	font-family: arial;
+ }
+
+
+.tombolkotak{
+background-color:grey;
+	float: left;
+	height: 100%;
+	width:20%;
+	padding: 20px;
+}
+
+.tombolkotak button{
+	
+	 background-color: grey;
+	 border: 1px solid black;
+	 width: 100%;
+	 padding: 20px;
+	 display: block;
+	 font-size: 20px;
+}
+.tombolkotak button.active{
+	background-color: red;
+}
+
+.tombolkotak button:hover{
+	background-color: whitesmoke;
+	cursor: pointer;
+
+}
+.bawah{
+	background-color: lightseagreen;
+	border: 2px solid black;
+	width: 100%;
+	height: 10%;
+	float: left;
+	padding: 20px 40px;
+
+}
+
+.txtbawah{
+	font-size: 30px;
+	font-family:forte;
+
+}
+table{
+	overflow: auto;
+	font-size: 30px;
+	
+}
+.subjudul{
+	float:right;
+	text-align: center;
+	margin-right: 5%;
+	margin-top: 10%;
+	
+}
+
+.kotakskill{
+	width:100%;
+	border:1px solid black;
+	background-color: whitesmoke;
+	display: flex;
+	z-index: 99;
+}
+
+.kotakskill2{
+	border:1px solid black;
+	background-color: dimgrey;
+	z-index: 100;
+}
+
+@media(max-width:620px){
+	.judul,.bunder,.isi,.tombolkotak,.bawah,.txtbawah,table,.subjudul,.kotakskill2,.kotakskill{
+		width: 100%;
+		height: auto;
+	}
+
+}
+</style>
+<header class="judul">
+<h1><p class="subjudul"> RICKY AZIZ MAHENDRA</h1></p>
+<img src="poto.jpg" class="bunder" alt="foto ku" title="foto ku">
+
+</header>
+<section>
+
+<nav class="tombolkotak">
+	<button  onclick="myFunction(event, 'Profil')" class="tombolkotaklink"> Profil Saya </button>
+
+<button onclick="myFunction(event, 'Riwayat')" class="tombolkotaklink"> Riwayat Pendidikan </button>
+
+<button  onclick="myFunction(event, 'Ahli')" class="tombolkotaklink"> Keahlian Saya </button>
+
+<button  onclick="myFunction(event, 'Pengalaman')" class="tombolkotaklink"> Pengalaman Kerja </button>
+
+</nav>
+<p id="Profil" class="isi" style="font-size: 18px;" align="justify">
+	<table style="width:100%">
+		<p>PROFIL SAYA</p>
+		<tr>
+		<td><p align="justify" style="font-size:28px;">Saya adalah mahasiswa dari Universitas Slamet Riyadi Surakarta jurusan Pendidikan Bahasa Inggris yang saat ini sedang menempuh pemberkasan skripsi untuk Wisuda bulan Mei. Dipendidikan sebelumnya, Saya lulusan dari SMK N 5 Surakarta jurusan RPL (Rekayasa Perangkat Lunak) yang berfokus mempelajari Pemrograman Berbasis Objek seperti pembuatan aplikasi desktop dan web designer. Saya mampu mengoperasikan Microsoft Word, Microsoft Excel, Microsoft Acces, dan pula cukup familiar dengan platform pengelolaan database yaitu MySql. Saya suka untuk belajar hal baru terutama dibidang perkomputerisasian, desain grafis, dan saya tipe pekerja keras. Disisi lain, Saya dapat bekerja secara individu maupun tim. Saya bersedia untuk belajar dan saya yakin dapat memberikan kontribusi yang berarti</td>
+		</tr>
+		
+</p>
+</table>
+
+	<p align="justify" id="Riwayat" class="isi">
+		<table style="width:100%">
+		<p align="center" style="border:2px solid black;"> RIWAYAT PENDIDIKAN </p>
+		<tr>
+		<td><b>2005-2006</b></td>
+		<td></td>
+		<td>Taman Kanak kanak Permata Surakarta</td>
+		</tr>
+
+		<tr>
+		<td><b>2006-2011</b></td>
+		<td></td>
+		<td>Sekolah Dasar Negeri Banyuagung II Surakarta</td>
+		</tr>
+
+		<tr>
+		<td><b>2011-2014</b></td>
+		<td></td>
+		<td>Sekolah Menengah Pertama Negeri 17 Surakarta</td>
+		</tr>
+
+		<tr>
+		<td><b>2015-2017</b></td>
+		<td></td>
+		<td>Sekolah Menengah Kejuruan Negeri 5 Surakarta, Jurusan Rekayasa Perangkat Lunak</td>
+		</tr>
+
+		<tr>
+		<td><b>2017-Sekarang</b></td>
+		<td></td>
+		<td>Kuliah di Universitas Slamet Riyadi Surakarta (UNISRI), Jurusan FKIP -Progdi: Pendidikan Bahasa Inggris, Program S1</td>
+		</tr>
+	</p>
+</table>
+	
+	<p align="justify" id="Ahli" class="isi">
+	<table style="width:100%">
+	<p align="center" style="border:2px solid black;">KEAHLIAN DAN KEMAMPUAN</p>
+	<tr>
+		<td>Pengoprasian Ms.Excel</td>
+		<td>
+			<div class="kotakskill"> 
+			<div class="kotakskill2">78% &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></div>
+		</div>
+		</tr>
+
+	<tr>
+		<td>Pengoprasian Ms.Word</td>
+		<td><div class="kotakskill"> 
+		<div class="kotakskill2"> 80% &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></div>
+		</tr>
+
+		<tr>
+		<td>Editing Video</td>
+		<td><div class="kotakskill"> 
+		<div class="kotakskill2"> 26% &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></div>
+		</tr>
+
+		<tr>
+		<td>Pemrograman WEB HTML</td>
+		<td><div class="kotakskill"> 
+		<div class="kotakskill2"> 66% &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></div>
+		</tr>
+
+		<tr>
+		<td>Desain Grafis</td>
+		<td><div class="kotakskill"> 
+		<div class="kotakskill2"> 19% &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></div>
+		</tr>
+
+		<tr>
+		<td>Kemampuan berbahasa Inggris</td>
+		<td><div class="kotakskill"> 
+		<div class="kotakskill2"> 70% &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></div>
+		</tr>
+
+</p>
+</table>
+
+	<p id="Pengalaman" class="isi">
+	<table style="width:100%; font-size: 20px;">
+		<p align="center" style="border:2px solid black;"> PENGALAMAN KERJA </p>
+		<tr>
+		<th><img src="bumi.png" style="width: 60%; float:right; margin-right: 40%; margin-bottom: 10%;"></th>
+		<th><img src="cocoa.jpg" style="width: 50%; float:left;"></th>
+				
+		</tr>
+
+		<tr>
+		<td><b> Nama Perusahaan</b></td>
+		<td><b> Nama Perusahaan</b></td>
+	</tr>
+		<tr>
+		<td> PT. Bumi Aksara</td>
+		<td> TBK Cocoa</td>
+	</tr>
+
+	<tr>
+		<td> <b>Keahlian yang dikontribusikan</b></td>
+		<td> <b>Keahlian yang dikontribusikan</b></td>
+	</tr>		
+	<tr>
+		<td>Skill Komputer, Skill Packing, Skill Persortiran Barang</td>
+		<td>Skill Komunikasi dan Penjualan</td>
+	</tr>
+	<tr>
+		<td> <b>Periode</b></td>
+		<td> <b>Periode</b></td>
+	</tr>		
+	<tr>
+		<td>Juli 2017- Maret 2019</td>
+		<td>April 2019- Mei 2021</td>
+	</tr>
+</table>
+</p>
+
+
+
+</section>
+<div class="bawah">
+<span class="txtbawah">Terimakasih</span>
+</div>	
+
+
+
+<script>
+	function myFunction(evt, pin){
+		var i, tombolkotaklink, isi;
+	isi = document.getElementsByClassName("isi");
+	for(i = 0; i < isi.length; i++){
+		isi[i].style.display="none";
+	}
+	tombolkotaklink=document.getElementsByClassName("tombolkotaklink");
+	for(i=0; i < tombolkotaklink.length; i++){
+		tombolkotaklink[i].className = tombolkotaklink[i].className.replace("active", "");
+	}
+	
+	document.getElementById(pin).style.display="block";
+	evt.currentTarget.className += "active";
+}
+</script>
+
+
+</body>
+</html>
